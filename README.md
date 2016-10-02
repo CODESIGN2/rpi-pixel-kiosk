@@ -22,3 +22,4 @@ systemctl --user start kiosk
 2. It is still possible if a keyboard is attached to navigate the system
 3. This is an internal project, built for fun, shared in-case it helps, please contribute issues, PR's, make it awesome!
 4. To change the URL, you want to edit [this line of this file](https://github.com/CODESIGN2/rpi-pixel-kiosk/blob/master/home/pi/.config/systemd/user/kiosk.service#L6).
+5. To change from powersaving to no screen blanking use `sudo touch /boot/alwayson` or appropriate method to create a file at `/boot/alwayson`
