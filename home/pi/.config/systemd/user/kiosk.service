@@ -1,0 +1,11 @@
+[Unit]
+Description=Kiosk
+After=graphical.target
+
+[Service]
+ExecStart=/home/pi/start-kiosk.sh
+Environment=DISPLAY=:0
+Restart=always
+
+[Install]
+WantedBy=default.target
