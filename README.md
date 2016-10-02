@@ -21,3 +21,4 @@ systemctl --user start kiosk
 1. We use systemD so that the browser restarts if it crashes (this also means we can kill the browser if it gets too hungry)
 2. It is still possible if a keyboard is attached to navigate the system
 3. This is an internal project, built for fun, shared in-case it helps, please contribute issues, PR's, make it awesome!
+4. To change the URL, you want to edit [this line of this file](https://github.com/CODESIGN2/rpi-pixel-kiosk/blob/master/home/pi/.config/systemd/user/kiosk.service#L6).
