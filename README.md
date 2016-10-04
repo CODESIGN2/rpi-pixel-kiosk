@@ -10,6 +10,7 @@ Using new Raspberry Pi Pixel to setup a fullscreen chromium kiosk
    git clone https://github.com/CODESIGN2/rpi-pixel-kiosk
    cd rpi-pixel-kiosk
    bash install.sh
+   ```
 
 ## Things to note
 
