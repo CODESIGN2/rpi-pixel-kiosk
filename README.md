@@ -6,6 +6,7 @@ Using new Raspberry Pi Pixel to setup a fullscreen chromium kiosk
 1. Download Raspbian Jessie minimum version is September 2016 (PIXEL release)
 2. Transfer image onto SD / micro-SD card as usual (probably a good idea to copy a wpa_supplicant.conf onto SD to setup wifi)
 3. Boot the raspberry pi, check you have internet connectivity, then use git to download the repo  
+
    ```shell
    git clone https://github.com/CODESIGN2/rpi-pixel-kiosk
    cd rpi-pixel-kiosk
