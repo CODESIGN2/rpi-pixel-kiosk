@@ -3,7 +3,7 @@ Description=Kiosk
 After=graphical.target
 
 [Service]
-ExecStart=/bin/bash /home/pi/start-kiosk.sh
+ExecStart=/bin/bash /opt/rpi-pixel-kiosk/start-kiosk.sh
 Environment=DISPLAY=:0
 Restart=always
 
