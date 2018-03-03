@@ -6,7 +6,7 @@ if [ -z "$KIOSKURL" ]; then
     KIOSKURL="https://www.codesign2.co.uk"
 fi
 
-if [ -e '/boot/alwayson' ]; then
+if [ -e '/boot/alwayson' ] || [ -e '$HOME/.kiosk-alwayson' ] ; then
   xset -dpms
   xset s off
 fi
