@@ -11,7 +11,7 @@ ReplaceTextLine() {
     # ReplaceTextLine /file search replace
     grep -Ei "^$2" $1 >> /dev/null
     if [ $? = 0 ]; then
-        sed -i "s/$2.*/$3/g" $1
+        sed -i "s|$2.*|$3|g" $1
     else
         echo "$3" >> $1
     fi
