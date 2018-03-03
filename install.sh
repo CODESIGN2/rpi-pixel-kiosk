@@ -6,17 +6,6 @@ if [ $# -gt 0 ]; then
     URL=$1
 fi
 
-# Nabbed From PiNet
-ReplaceTextLine() {
-    # ReplaceTextLine /file search replace
-    grep -Ei "^$2" $1 >> /dev/null
-    if [ $? = 0 ]; then
-        sed -i "s|$2.*|$3|g" $1
-    else
-        echo "$3" >> $1
-    fi
-}
-
 CopyFilesystem() {
     sudo mkdir -p /opt/rpi-pixel-kiosk
     sudo cp -raf home/pi/* /opt/rpi-pixel-kiosk/
@@ -37,8 +26,7 @@ main() {
     CopyFilesystem
     EnableServiceForUser
     StartServiceForUser
-    ReplaceTextLine ~/.profile KIOSKURL KIOSKURL=$URL
+    echo "$URL" > ~/.kiosk-url
 }
 
 main
-

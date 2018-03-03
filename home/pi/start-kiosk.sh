@@ -1,5 +1,7 @@
 #!/bin/sh
 
+KIOSKURL=$(cat ~/.kiosk-url)
+
 if [ -z "$KIOSKURL" ]; then
     KIOSKURL="https://www.codesign2.co.uk"
 fi
