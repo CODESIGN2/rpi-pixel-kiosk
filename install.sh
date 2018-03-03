@@ -2,7 +2,7 @@
 
 URL="https://www.codesign2.co.uk"
 
-if [ $# -gte 1 ]; then
+if [ $# -gt 1 ]; then
     URL=$1
 fi
 
@@ -19,9 +19,9 @@ ReplaceTextLine() {
 
 CopyFilesystem() {
     sudo mkdir -p /opt/rpi-pixel-kiosk
-    sudo cp -raf home/pi /opt/rpi-pixel-kiosk
+    sudo cp -raf home/pi /opt/rpi-pixel-kiosk/
     sudo chmod +rx /opt/rpi-pixel-kiosk
-    cp -raf home/pi/.config ~/.config
+    cp -raf home/pi/.config/* ~/.config
 }
 
 EnableServiceForUser() {
