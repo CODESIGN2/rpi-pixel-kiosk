@@ -2,7 +2,7 @@
 
 URL="https://www.codesign2.co.uk"
 
-if [ $# -gt 1 ]; then
+if [ $# -gt 0 ]; then
     URL=$1
 fi
 
