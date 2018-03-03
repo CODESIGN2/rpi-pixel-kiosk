@@ -37,7 +37,7 @@ main() {
     CopyFilesystem
     EnableServiceForUser
     StartServiceForUser
-    ReplaceTextLine ~/.bashrc KIOSKURL KIOSKURL=$URL
+    ReplaceTextLine ~/.profile KIOSKURL KIOSKURL=$URL
 }
 
 main
